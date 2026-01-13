@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDCIM - Viettel Data Center Infrastructure Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="HInh anh/logo viettel.png" alt="Viettel Logo" class="logo">
+                <span class="brand-name">VDCIM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-i18n="nav_home">Trang chủ</a></li>
+                <li><a href="#features" data-i18n="nav_features">Tính năng</a></li>
+                <li><a href="#technology" data-i18n="nav_technology">Công nghệ</a></li>
+                <li><a href="#benefits" data-i18n="nav_benefits">Ưu thế</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Dự án</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Liên hệ</a></li>
+                <li class="nav-language">
+                    <div class="language-selector">
+                        <button class="lang-dropdown-btn">
+                            <img src="https://flagcdn.com/w20/vn.png" alt="VI" class="current-flag">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="lang-dropdown-menu">
+                            <button class="lang-option active" data-lang="vi">
+                                <img src="https://flagcdn.com/w20/vn.png" alt="VI">
+                                <span>Tiếng Việt</span>
+                            </button>
+                            <button class="lang-option" data-lang="en">
+                                <img src="https://flagcdn.com/w20/gb.png" alt="EN">
+                                <span>English</span>
+                            </button>
+                            <button class="lang-option" data-lang="es">
+                                <img src="https://flagcdn.com/w20/es.png" alt="ES">
+                                <span>Español</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="HInh anh/Viettel Building 5 -1 (1).jpg" alt="Viettel Building" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" data-i18n="hero_title">
+                    VDCIM
+                    <span class="highlight">Nền tảng quản trị hạ tầng số quốc gia</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    Giải pháp "All-in-One" - Make in Vietnam - Led by Viettel
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label" data-i18n="stat_datacenters">Data Centers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="stat-value">10</span>K+</div>
+                        <div class="stat-label" data-i18n="stat_racks">Racks</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="stat-value">7</span>K+</div>
+                        <div class="stat-label" data-i18n="stat_devices">Thiết bị hạ tầng</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="stat-value">60</span>K+</div>
+                        <div class="stat-label" data-i18n="stat_servers">Servers</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Liên hệ ngay</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="btn_learn">Tìm hiểu thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="video_title">VDCIM trong hành động</h2>
+                <p data-i18n="video_subtitle">Khám phá các tính năng và công nghệ của VDCIM</p>
+            </div>
+            <div class="video-container">
+                <video controls poster="HInh anh/homepage.jpg" class="demo-video">
+                    <source src="VDCIM1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="overview_title">VDCIM - Giải pháp "Make in Vietnam"</h2>
+                <p data-i18n="overview_subtitle">Nền tảng quản trị hạ tầng trung tâm dữ liệu toàn diện</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3 data-i18n="overview_allinone_title">NỀN TẢNG "ALL-IN-ONE"</h3>
+                    <p data-i18n="overview_allinone_desc">
+                        Phát triển bởi Viettel, quản lý toàn diện hạ tầng trung tâm dữ liệu (DC) trên một nền tảng duy nhất.
+                        Hợp nhất giám sát, vận hành, bảo mật, phân tích dữ liệu và tối ưu năng lượng xanh trong cùng hệ thống.
+                    </p>
+                    
+                    <h3 data-i18n="overview_tech_title">LÀM CHỦ CÔNG NGHỆ</h3>
+                    <p data-i18n="overview_tech_desc">
+                        Sản phẩm công nghệ cao "Make in Vietnam" - Sẵn sàng cạnh tranh trên thị trường quốc tế.
+                    </p>
+
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <span data-i18n="award_1">Giải thưởng chuyển đổi số quốc gia 2025</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span data-i18n="award_2">Top 10 sản phẩm công nghệ số chiến lược xuất sắc</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <img src="HInh anh/vt1.jpg" alt="VDCIM Overview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="features_title">Tính năng hệ thống</h2>
+                <p data-i18n="features_subtitle">Giải pháp toàn diện cho quản trị Data Center</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-i18n="feature_1_title">Quản lý toàn trình</h3>
+                    <p data-i18n="feature_1_desc">Quản lý toàn trình việc thiết kế - triển khai - vận hành DC theo chuẩn Uptime</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="feature_2_title">Giám sát thời gian thực</h3>
+                    <p data-i18n="feature_2_desc">Giám sát tham số tập trung theo thời gian thực với cảnh báo tức thời</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 data-i18n="feature_3_title">Quản lý tài nguyên</h3>
+                    <p data-i18n="feature_3_desc">Quản lý tài nguyên và không gian DC hiệu quả</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-i18n="feature_4_title">Tối ưu thông minh</h3>
+                    <p data-i18n="feature_4_desc">Phân tích xu hướng, dữ liệu lớn và tối ưu năng lượng DC</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 data-i18n="feature_5_title">Bản sao số 3D</h3>
+                    <p data-i18n="feature_5_desc">Mô hình bản sao số trực quan hạ tầng DC tỷ lệ 1:1</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-i18n="feature_6_title">Trợ lý ảo AI</h3>
+                    <p data-i18n="feature_6_desc">Trợ lý ảo AI hỗ trợ vận hành thông minh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="tech_title">Công nghệ cốt lõi</h2>
+                <p data-i18n="tech_subtitle">Kiến trúc công nghệ đột phá</p>
+            </div>
+            <div class="tech-content">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="tech-info">
+                        <h3 data-i18n="tech_1_title">Tính sẵn sàng cao</h3>
+                        <ul>
+                            <li data-i18n="tech_1_item_1">Kiến trúc cluster linh hoạt, mở rộng cho DC lớn</li>
+                            <li data-i18n="tech_1_item_2">Triển khai trên cloud riêng với DC chính & dự phòng</li>
+                            <li data-i18n="tech_1_item_3">Hỗ trợ đa giao thức (SNMP, Modbus, BACnet)</li>
+                            <li data-i18n="tech_1_item_4">Sao lưu tự động và phục hồi nhanh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="tech-info">
+                        <h3 data-i18n="tech_2_title">Bảo mật đa tầng</h3>
+                        <ul>
+                            <li data-i18n="tech_2_item_1">Phân vùng mạng độc lập (App, DMZ, LAB)</li>
+                            <li data-i18n="tech_2_item_2">Bảo mật đa tầng với firewall công nghiệp, IDS/IPS, UTM</li>
+                            <li data-i18n="tech_2_item_3">Giao tiếp mã hóa SSL/TLS, xác thực đa yếu tố</li>
+                            <li data-i18n="tech_2_item_4">Tuân thủ tiêu chuẩn ISO/IEC 27001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="tech-info">
+                        <h3 data-i18n="tech_3_title">AI & Digital Twin</h3>
+                        <ul>
+                            <li data-i18n="tech_3_item_1">Bản sao số 3D tỷ lệ 1:1 của toàn bộ phòng máy</li>
+                            <li data-i18n="tech_3_item_2">AI dự đoán sự cố và tối ưu năng lượng</li>
+                            <li data-i18n="tech_3_item_3">Machine Learning phân tích xu hướng</li>
+                            <li data-i18n="tech_3_item_4">Tự động hóa vận hành thông minh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="benefits_title">Ưu thế cạnh tranh</h2>
+                <p data-i18n="benefits_subtitle">Giá trị vượt trội cho khách hàng</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 data-i18n="benefit_1_title">Chi phí cạnh tranh</h3>
+                    <p class="benefit-number">30-50%</p>
+                    <p data-i18n="benefit_1_desc">Giảm chi phí đầu tư so với vendor quốc tế</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-i18n="benefit_2_title">Tiết kiệm thời gian</h3>
+                    <p class="benefit-number">30-40%</p>
+                    <p data-i18n="benefit_2_desc">Giảm thời gian triển khai</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-i18n="benefit_3_title">Green DC</h3>
+                    <p class="benefit-number">PUE < 1.5</p>
+                    <p data-i18n="benefit_3_desc">Tối ưu năng lượng, giảm phát thải carbon</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-i18n="benefit_4_title">Hỗ trợ 24/7</h3>
+                    <p class="benefit-number">24/7</p>
+                    <p data-i18n="benefit_4_desc">Đội ngũ kỹ thuật chuyên nghiệp, sẵn sàng hỗ trợ</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 data-i18n="benefit_5_title">End-to-End Solution</h3>
+                    <p data-i18n="benefit_5_desc">Thiết kế, triển khai, bảo mật và vận hành toàn diện</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 data-i18n="benefit_6_title">Make in Vietnam</h3>
+                    <p data-i18n="benefit_6_desc">Làm chủ công nghệ, không phụ thuộc vendor nước ngoài</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="projects_title">Các dự án đã triển khai</h2>
+                <p data-i18n="projects_subtitle">11 Data Center đạt chuẩn quốc tế Tier III</p>
+            </div>
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <img src="HInh anh/hl1.jpg" alt="Data Center 1">
+                    <div class="project-overlay">
+                        <h3 data-i18n="project_1">Viettel Data Center</h3>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="HInh anh/hl2.jpg" alt="Data Center 2">
+                    <div class="project-overlay">
+                        <h3 data-i18n="project_2">Viettel Data Center</h3>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="HInh anh/HLA.jpg" alt="Data Center 3">
+                    <div class="project-overlay">
+                        <h3 data-i18n="project_3">Hoà Lạc Data Center</h3>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="HInh anh/tan phu.jpg" alt="Data Center 4">
+                    <div class="project-overlay">
+                        <h3 data-i18n="project_4">Tân Phú Data Center</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title">Liên hệ với chúng tôi</h2>
+                <p data-i18n="contact_subtitle">Để được tư vấn chi tiết về giải pháp VDCIM</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact_info_title">Thông tin liên hệ</h3>
+                    <div class="info-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>Viettel Network</h4>
+                            <p>No.19 Duy Tan street<br>Ha Noi - VietNam</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="contact_phone">Điện thoại</h4>
+                            <p>+84 24 3783 8222</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vdcim@viettel.com.vn</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p>www.viettel.com.vn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-i18n="form_company">Công ty</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_message">Nội dung *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="form_submit">Gửi thông tin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="HInh anh/logo viettel.png" alt="Viettel Logo" class="footer-logo">
+                    <p data-i18n="footer_desc">
+                        VDCIM - Nền tảng quản trị hạ tầng số quốc gia<br>
+                        Make in Vietnam - Led by Viettel
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_product">Sản phẩm</h4>
+                    <ul>
+                        <li><a href="#features" data-i18n="nav_features">Tính năng</a></li>
+                        <li><a href="#technology" data-i18n="nav_technology">Công nghệ</a></li>
+                        <li><a href="#benefits" data-i18n="nav_benefits">Ưu thế</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_company">Công ty</h4>
+                    <ul>
+                        <li><a href="#projects" data-i18n="nav_projects">Dự án</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_connect">Kết nối</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 Viettel Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
