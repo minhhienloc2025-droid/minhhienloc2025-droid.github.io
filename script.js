@@ -31,7 +31,7 @@ const translations = {
         overview_tech_title: "LÀM CHỦ CÔNG NGHỆ",
         overview_tech_desc: "Sản phẩm công nghệ cao \"Make in Vietnam\" - Sẵn sàng cạnh tranh trên thị trường quốc tế.",
         award_1: "Giải thưởng chuyển đổi số quốc gia 2025",
-        award_2: "Top 10 sản phẩm công nghệ số chiến lược xuất sắc",
+        award_2: "Top 10 sản phẩm công nghệ số chiến lược xuất sắc - Giải thưởng Make in VietNam của bộ khoa học công nghệ - chính phủ Việt Nam",
         
         // Features
         features_title: "Tính năng hệ thống",
@@ -142,7 +142,7 @@ const translations = {
         overview_tech_title: "TECHNOLOGY MASTERY",
         overview_tech_desc: "High-tech product \"Made in Vietnam\" - Ready to compete in the international market.",
         award_1: "National Digital Transformation Award 2025",
-        award_2: "Top 10 Outstanding Strategic Digital Technology Products",
+        award_2: "Top 10 Outstanding Strategic Digital Technology Products - Make in Vietnam Award by Ministry of Science and Technology - Government of Vietnam",
         
         // Features
         features_title: "System Features",
@@ -253,7 +253,7 @@ const translations = {
         overview_tech_title: "DOMINIO TECNOLÓGICO",
         overview_tech_desc: "Producto de alta tecnología \"Hecho en Vietnam\" - Listo para competir en el mercado internacional.",
         award_1: "Premio Nacional de Transformación Digital 2025",
-        award_2: "Top 10 Productos de Tecnología Digital Estratégica Sobresalientes",
+        award_2: "Top 10 Productos de Tecnología Digital Estratégica Sobresalientes - Premio Hecho en Vietnam del Ministerio de Ciencia y Tecnología - Gobierno de Vietnam",
         
         // Features
         features_title: "Características del Sistema",
