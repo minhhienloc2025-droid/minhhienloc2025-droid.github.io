@@ -38,16 +38,23 @@ const translations = {
         features_subtitle: "Giải pháp toàn diện cho quản trị Data Center",
         feature_1_title: "Quản lý toàn trình",
         feature_1_desc: "Quản lý toàn trình việc thiết kế - triển khai - vận hành DC theo chuẩn Uptime",
+        feature_1_detail: "Mọi không gian, thiết bị, kết nối được quản trị chi tiết và rõ ràng phục vụ vận hành hiệu quả",
         feature_2_title: "Giám sát thời gian thực",
         feature_2_desc: "Giám sát tham số tập trung theo thời gian thực với cảnh báo tức thời",
+        feature_2_detail: "Dynamic Visualization Builder - Trình thiết kế màn hình giám sát tùy biến theo thời gian thực. Người dùng tự xây dựng giao diện giám sát mà không cần lập trình. Mang lại trải nghiệm trực quan, linh hoạt và phù hợp với nhiều kịch bản vận hành.",
         feature_3_title: "Quản lý tài nguyên",
         feature_3_desc: "Quản lý tài nguyên và không gian DC hiệu quả",
+        feature_3_detail: "Dashboard tổng quan quản lý tài nguyên DC toàn diện. Theo dõi công suất, không gian, thiết bị và tối ưu hóa sử dụng tài nguyên theo thời gian thực.",
         feature_4_title: "Tối ưu thông minh",
         feature_4_desc: "Phân tích xu hướng, dữ liệu lớn và tối ưu năng lượng DC",
+        feature_4_detail: "Dynamic Cooling Optimizer - Giải pháp tối ưu năng lượng, tự loại bỏ hotspot, dựa trên mô hình deep learning do Viettel tự nghiên cứu.",
         feature_5_title: "Bản sao số 3D",
         feature_5_desc: "Mô hình bản sao số trực quan hạ tầng DC tỷ lệ 1:1",
+        feature_5_detail: "Xây dựng bản sao số của toàn bộ phòng máy theo tỷ lệ thực, giúp trực quan hóa cơ sở hạ tầng và hỗ trợ vận hành hiệu quả. Khả năng thể hiện giám sát tham số vận hành trên bản sao số theo thời gian thực.",
         feature_6_title: "Trợ lý ảo AI",
         feature_6_desc: "Trợ lý ảo AI hỗ trợ vận hành thông minh",
+        feature_6_detail: "Trợ lý ảo AI thông minh hỗ trợ vận hành tự động. Phân tích dữ liệu, đưa ra khuyến nghị và giải đáp thắc mắc nhanh chóng, giúp tối ưu hóa quy trình vận hành Data Center.",
+        demo_badge: "Xem demo",
         
         // Technology
         tech_title: "Công nghệ cốt lõi",
@@ -81,16 +88,26 @@ const translations = {
         benefit_4_desc: "Đội ngũ kỹ thuật chuyên nghiệp, sẵn sàng hỗ trợ",
         benefit_5_title: "End-to-End Solution",
         benefit_5_desc: "Thiết kế, triển khai, bảo mật và vận hành toàn diện",
-        benefit_6_title: "Make in Vietnam",
-        benefit_6_desc: "Làm chủ công nghệ, không phụ thuộc vendor nước ngoài",
-        
+        benefit_6_title: "Independent & Flexible Platform",
+        benefit_6_desc: "Nền tảng độc lập & linh hoạt — Toàn quyền kiểm soát thiết lập và vận hành, dễ dàng tùy biến mà không phụ thuộc vendor.",
+
         // Projects
         projects_title: "Các dự án đã triển khai",
         projects_subtitle: "11 Data Center đạt chuẩn quốc tế Tier III",
-        project_1: "Viettel Data Center",
-        project_2: "Viettel Data Center",
-        project_3: "Hoà Lạc Data Center",
-        project_4: "Tân Phú Data Center",
+        project_hla_title: "Hoa Lac DC",
+        project_hla_desc: "2400 rack",
+        project_hl1_title: "Hoa Lac DC",
+        project_hl1_desc: "Phòng điều hành",
+        project_hl2_title: "Hoa Lac DC",
+        project_hl2_desc: "Phòng điều hành",
+        project_nth_title: "Nguyen Thanh Han DC",
+        project_nth_desc: "265 rack",
+        project_tp_title: "Tan Phu Trung DC",
+        project_tp_desc: "10k rack",
+        project_hkh2_title: "Hoa Khanh 2 DC",
+        project_hkh2_desc: "1000 rack - Dự kiến vận hành 2027",
+        project_hkh2_landscape_title: "Hoa Khanh 2 DC",
+        project_hkh2_landscape_desc: "Cảnh quan tổng thể",
         
         // Contact
         contact_title: "Liên hệ với chúng tôi",
@@ -103,6 +120,7 @@ const translations = {
         form_company: "Công ty",
         form_message: "Nội dung *",
         form_submit: "Gửi thông tin",
+        qr_scan: "Quét mã QR để liên hệ nhanh",
         
         // Footer
         footer_desc: "VDCIM - Nền tảng quản trị hạ tầng số quốc gia<br>Make in Vietnam - Led by Viettel",
@@ -149,16 +167,23 @@ const translations = {
         features_subtitle: "Comprehensive Solution for Data Center Management",
         feature_1_title: "End-to-End Management",
         feature_1_desc: "Complete management of DC design - deployment - operation according to Uptime standards",
+        feature_1_detail: "Every space, device, and connection is managed in detail and clearly for efficient operations",
         feature_2_title: "Real-time Monitoring",
         feature_2_desc: "Centralized real-time parameter monitoring with instant alerts",
+        feature_2_detail: "Dynamic Visualization Builder - Real-time customizable monitoring screen designer. Users build monitoring interfaces without programming. Delivers intuitive, flexible experience suitable for various operational scenarios.",
         feature_3_title: "Resource Management",
         feature_3_desc: "Efficient management of DC resources and space",
+        feature_3_detail: "Comprehensive DC resource management dashboard. Monitor capacity, space, equipment and optimize resource utilization in real-time.",
         feature_4_title: "Smart Optimization",
         feature_4_desc: "Trend analysis, big data, and DC energy optimization",
+        feature_4_detail: "Dynamic Cooling Optimizer - Energy optimization solution, automatic hotspot removal, based on deep learning model researched by Viettel.",
         feature_5_title: "3D Digital Twin",
         feature_5_desc: "Visual 3D digital twin model of DC infrastructure at 1:1 scale",
+        feature_5_detail: "Build digital twin of entire facility to real scale, enabling infrastructure visualization and efficient operations support. Real-time operational parameter monitoring on digital twin.",
         feature_6_title: "AI Virtual Assistant",
         feature_6_desc: "AI virtual assistant for smart operations support",
+        feature_6_detail: "Intelligent AI virtual assistant for automated operations support. Analyzes data, provides recommendations and answers questions quickly, helping optimize Data Center operations processes.",
+        demo_badge: "View demo",
         
         // Technology
         tech_title: "Core Technology",
@@ -192,16 +217,26 @@ const translations = {
         benefit_4_desc: "Professional technical team, ready to support",
         benefit_5_title: "End-to-End Solution",
         benefit_5_desc: "Comprehensive design, deployment, security and operations",
-        benefit_6_title: "Made in Vietnam",
-        benefit_6_desc: "Technology mastery, no dependence on foreign vendors",
-        
+        benefit_6_title: "Independent & Flexible Platform",
+        benefit_6_desc: "Independent & Flexible Platform — full control of setup and operations, easy customization without vendor dependency.",
+
         // Projects
         projects_title: "Deployed Projects",
         projects_subtitle: "11 Data Centers with International Tier III Standards",
-        project_1: "Viettel Data Center",
-        project_2: "Viettel Data Center",
-        project_3: "Hoa Lac Data Center",
-        project_4: "Tan Phu Data Center",
+        project_hla_title: "Hoa Lac DC",
+        project_hla_desc: "2400 racks",
+        project_hl1_title: "Hoa Lac DC",
+        project_hl1_desc: "Control Room",
+        project_hl2_title: "Hoa Lac DC",
+        project_hl2_desc: "Control Room",
+        project_nth_title: "Nguyen Thanh Han DC",
+        project_nth_desc: "265 racks",
+        project_tp_title: "Tan Phu Trung DC",
+        project_tp_desc: "10k racks",
+        project_hkh2_title: "Hoa Khanh 2 DC",
+        project_hkh2_desc: "1000 racks - Expected operation 2027",
+        project_hkh2_landscape_title: "Hoa Khanh 2 DC",
+        project_hkh2_landscape_desc: "Overall landscape",
         
         // Contact
         contact_title: "Contact Us",
@@ -214,6 +249,7 @@ const translations = {
         form_company: "Company",
         form_message: "Message *",
         form_submit: "Submit",
+        qr_scan: "Scan QR code for quick contact",
         
         // Footer
         footer_desc: "VDCIM - National Digital Infrastructure Management Platform<br>Made in Vietnam - Led by Viettel",
@@ -260,16 +296,23 @@ const translations = {
         features_subtitle: "Solución Integral para la Gestión de Centros de Datos",
         feature_1_title: "Gestión de Extremo a Extremo",
         feature_1_desc: "Gestión completa del diseño - implementación - operación del DC según estándares Uptime",
+        feature_1_detail: "Cada espacio, dispositivo y conexión se gestiona detalladamente para operaciones eficientes",
         feature_2_title: "Monitoreo en Tiempo Real",
         feature_2_desc: "Monitoreo centralizado de parámetros en tiempo real con alertas instantáneas",
+        feature_2_detail: "Dynamic Visualization Builder - Diseñador de pantallas de monitoreo personalizables en tiempo real. Los usuarios construyen interfaces sin programación. Ofrece experiencia intuitiva y flexible para diversos escenarios operativos.",
         feature_3_title: "Gestión de Recursos",
         feature_3_desc: "Gestión eficiente de recursos y espacio del DC",
+        feature_3_detail: "Panel de gestión integral de recursos del DC. Monitorea capacidad, espacio, equipos y optimiza utilización de recursos en tiempo real.",
         feature_4_title: "Optimización Inteligente",
         feature_4_desc: "Análisis de tendencias, big data y optimización de energía del DC",
+        feature_4_detail: "Dynamic Cooling Optimizer - Solución de optimización energética, eliminación automática de puntos calientes, basada en modelo de deep learning investigado por Viettel.",
         feature_5_title: "Gemelo Digital 3D",
         feature_5_desc: "Modelo visual de gemelo digital 3D de infraestructura DC a escala 1:1",
+        feature_5_detail: "Construye gemelo digital de toda la instalación a escala real, permitiendo visualización de infraestructura y soporte operativo eficiente. Monitoreo de parámetros operativos en tiempo real sobre el gemelo digital.",
         feature_6_title: "Asistente Virtual AI",
         feature_6_desc: "Asistente virtual AI para soporte de operaciones inteligentes",
+        feature_6_detail: "Asistente virtual AI inteligente para soporte de operaciones automatizadas. Analiza datos, proporciona recomendaciones y responde preguntas rápidamente, ayudando a optimizar procesos operativos del Data Center.",
+        demo_badge: "Ver demo",
         
         // Technology
         tech_title: "Tecnología Central",
@@ -303,16 +346,26 @@ const translations = {
         benefit_4_desc: "Equipo técnico profesional, listo para apoyar",
         benefit_5_title: "Solución de Extremo a Extremo",
         benefit_5_desc: "Diseño, implementación, seguridad y operaciones integrales",
-        benefit_6_title: "Hecho en Vietnam",
-        benefit_6_desc: "Dominio tecnológico, sin dependencia de proveedores extranjeros",
-        
+        benefit_6_title: "Plataforma Independiente & Flexible",
+        benefit_6_desc: "Plataforma Independiente & Flexible — control total de configuración y operaciones, fácil personalización sin dependencia de proveedores.",
+
         // Projects
         projects_title: "Proyectos Implementados",
         projects_subtitle: "11 Centros de Datos con Estándares Internacionales Tier III",
-        project_1: "Centro de Datos Viettel",
-        project_2: "Centro de Datos Viettel",
-        project_3: "Centro de Datos Hoa Lac",
-        project_4: "Centro de Datos Tan Phu",
+        project_hla_title: "Hoa Lac DC",
+        project_hla_desc: "2400 racks",
+        project_hl1_title: "Hoa Lac DC",
+        project_hl1_desc: "Sala de Control",
+        project_hl2_title: "Hoa Lac DC",
+        project_hl2_desc: "Sala de Control",
+        project_nth_title: "Nguyen Thanh Han DC",
+        project_nth_desc: "265 racks",
+        project_tp_title: "Tan Phu Trung DC",
+        project_tp_desc: "10k racks",
+        project_hkh2_title: "Hoa Khanh 2 DC",
+        project_hkh2_desc: "1000 racks - Operación prevista 2027",
+        project_hkh2_landscape_title: "Hoa Khanh 2 DC",
+        project_hkh2_landscape_desc: "Vista panorámica",
         
         // Contact
         contact_title: "Contáctenos",
@@ -325,6 +378,7 @@ const translations = {
         form_company: "Empresa",
         form_message: "Mensaje *",
         form_submit: "Enviar",
+        qr_scan: "Escanea el código QR para contacto rápido",
         
         // Footer
         footer_desc: "VDCIM - Plataforma Nacional de Gestión de Infraestructura Digital<br>Hecho en Vietnam - Liderado por Viettel",
@@ -610,6 +664,182 @@ document.addEventListener('DOMContentLoaded', () => {
     
     changeLanguage(savedLang);
 });
+
+// Video Modal Functionality
+function initVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+    const closeBtn = document.querySelector('.modal-close');
+    const overlay = document.querySelector('.modal-overlay');
+    
+    if (!modal || !modalVideo) return;
+    
+    // Click handler for feature cards with video
+    document.querySelectorAll('.feature-card[data-video]').forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Prevent tooltip from interfering
+            e.stopPropagation();
+            
+            const videoSrc = card.getAttribute('data-video');
+            modalVideo.querySelector('source').src = videoSrc;
+            modalVideo.load();
+            modal.classList.add('active');
+            
+            // Auto play after loading
+            modalVideo.addEventListener('loadeddata', function() {
+                modalVideo.play();
+            }, { once: true });
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close modal function
+    function closeModal() {
+        modal.classList.remove('active');
+        modalVideo.pause();
+        modalVideo.querySelector('source').src = '';
+        modalVideo.load();
+        document.body.style.overflow = '';
+    }
+    
+    // Close button click
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    // Overlay click
+    if (overlay) {
+        overlay.addEventListener('click', closeModal);
+    }
+    
+    // ESC key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+}
+
+// Initialize video modal when DOM is ready
+document.addEventListener('DOMContentLoaded', initVideoModal);
+
+// Projects Slider Functionality
+function initProjectsSlider() {
+    const slider = document.querySelector('.projects-slider');
+    const slides = document.querySelectorAll('.project-slide');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    const dotsContainer = document.querySelector('.slider-dots');
+    
+    if (!slider || slides.length === 0) return;
+    
+    let currentIndex = 0;
+    const slidesPerView = window.innerWidth > 768 ? (window.innerWidth > 1024 ? 3 : 2) : 1;
+    const totalSlides = slides.length;
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
+    
+    // Create dots
+    for (let i = 0; i <= maxIndex; i++) {
+        const dot = document.createElement('button');
+        dot.classList.add('slider-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    }
+    
+    const dots = document.querySelectorAll('.slider-dot');
+    
+    function updateSlider() {
+        const slideWidth = slides[0].offsetWidth;
+        const gap = 30;
+        const scrollPosition = currentIndex * (slideWidth + gap);
+        
+        slider.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+        
+        // Update button states
+        prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+        prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+        nextBtn.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+        nextBtn.style.pointerEvents = currentIndex >= maxIndex ? 'none' : 'auto';
+    }
+    
+    function goToSlide(index) {
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        updateSlider();
+    }
+    
+    function nextSlide() {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    }
+    
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    }
+    
+    // Event listeners
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    // Touch/Swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextSlide();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevSlide();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+    });
+    
+    // Initialize
+    updateSlider();
+    
+    // Update on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            location.reload(); // Reload to recalculate slides per view
+        }, 500);
+    });
+}
+
+// Initialize projects slider when DOM is ready
+document.addEventListener('DOMContentLoaded', initProjectsSlider);
 
 // Video loading optimization
 const demoVideo = document.querySelector('.demo-video');

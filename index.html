@@ -160,52 +160,64 @@
                 <p data-i18n="features_subtitle">Giải pháp toàn diện cho quản trị Data Center</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/6.asset management.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
                     <h3 data-i18n="feature_1_title">Quản lý toàn trình</h3>
                     <p data-i18n="feature_1_desc">Quản lý toàn trình việc thiết kế - triển khai - vận hành DC theo chuẩn Uptime</p>
+                    <div class="feature-tooltip" data-i18n="feature_1_detail">Mọi không gian, thiết bị, kết nối được quản trị chi tiết và rõ ràng phục vụ vận hành hiệu quả</div>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/5.monitor.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 data-i18n="feature_2_title">Giám sát thời gian thực</h3>
                     <p data-i18n="feature_2_desc">Giám sát tham số tập trung theo thời gian thực với cảnh báo tức thời</p>
+                    <div class="feature-tooltip" data-i18n="feature_2_detail">Dynamic Visualization Builder - Trình thiết kế màn hình giám sát tùy biến theo thời gian thực. Người dùng tự xây dựng giao diện giám sát mà không cần lập trình. Mang lại trải nghiệm trực quan, linh hoạt và phù hợp với nhiều kịch bản vận hành.</div>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/7.dashboard.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-server"></i>
                     </div>
                     <h3 data-i18n="feature_3_title">Quản lý tài nguyên</h3>
                     <p data-i18n="feature_3_desc">Quản lý tài nguyên và không gian DC hiệu quả</p>
+                    <div class="feature-tooltip" data-i18n="feature_3_detail">Dashboard tổng quan quản lý tài nguyên DC toàn diện. Theo dõi công suất, không gian, thiết bị và tối ưu hóa sử dụng tài nguyên theo thời gian thực.</div>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/4.cooling.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3 data-i18n="feature_4_title">Tối ưu thông minh</h3>
                     <p data-i18n="feature_4_desc">Phân tích xu hướng, dữ liệu lớn và tối ưu năng lượng DC</p>
+                    <div class="feature-tooltip" data-i18n="feature_4_detail">Dynamic Cooling Optimizer - Giải pháp tối ưu năng lượng, tự loại bỏ hotspot, dựa trên mô hình deep learning do Viettel tự nghiên cứu.</div>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/3.digital twin.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-cube"></i>
                     </div>
                     <h3 data-i18n="feature_5_title">Bản sao số 3D</h3>
                     <p data-i18n="feature_5_desc">Mô hình bản sao số trực quan hạ tầng DC tỷ lệ 1:1</p>
+                    <div class="feature-tooltip" data-i18n="feature_5_detail">Xây dựng bản sao số của toàn bộ phòng máy theo tỷ lệ thực, giúp trực quan hóa cơ sở hạ tầng và hỗ trợ vận hành hiệu quả. Khả năng thể hiện giám sát tham số vận hành trên bản sao số theo thời gian thực.</div>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-video="Clip/8.AI.mp4">
+                    <span class="demo-badge" data-i18n="demo_badge">Xem demo</span>
                     <div class="feature-icon">
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3 data-i18n="feature_6_title">Trợ lý ảo AI</h3>
                     <p data-i18n="feature_6_desc">Trợ lý ảo AI hỗ trợ vận hành thông minh</p>
+                    <div class="feature-tooltip" data-i18n="feature_6_detail">Trợ lý ảo AI thông minh hỗ trợ vận hành tự động. Phân tích dữ liệu, đưa ra khuyến nghị và giải đáp thắc mắc nhanh chóng, giúp tối ưu hóa quy trình vận hành Data Center.</div>
                 </div>
             </div>
         </div>
@@ -337,32 +349,66 @@
                 <h2 data-i18n="projects_title">Các dự án đã triển khai</h2>
                 <p data-i18n="projects_subtitle">11 Data Center đạt chuẩn quốc tế Tier III</p>
             </div>
-            <div class="projects-gallery">
-                <div class="project-item">
-                    <img src="HInh anh/hl1.jpg" alt="Data Center 1">
-                    <div class="project-overlay">
-                        <h3 data-i18n="project_1">Viettel Data Center</h3>
+            <div class="projects-slider-wrapper">
+                <button class="slider-nav slider-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="projects-slider">
+                    <div class="project-slide">
+                        <img src="HInh anh/HLA.jpg" alt="Hoa Lac Data Center">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_hla_title">Hoa Lac DC</h3>
+                            <p data-i18n="project_hla_desc">2400 rack</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/hl1.jpg" alt="Hoa Lac Control Room 1">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_hl1_title">Hoa Lac DC</h3>
+                            <p data-i18n="project_hl1_desc">Phòng điều hành</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/hl2.jpg" alt="Hoa Lac Control Room 2">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_hl2_title">Hoa Lac DC</h3>
+                            <p data-i18n="project_hl2_desc">Phòng điều hành</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/nth dep.png" alt="Nguyen Thanh Han Data Center">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_nth_title">Nguyen Thanh Han DC</h3>
+                            <p data-i18n="project_nth_desc">265 rack</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/tan phu.jpg" alt="Tan Phu Trung Data Center">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_tp_title">Tan Phu Trung DC</h3>
+                            <p data-i18n="project_tp_desc">10k rack</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/hkh2.png" alt="Hoa Khanh 2 Data Center">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_hkh2_title">Hoa Khanh 2 DC</h3>
+                            <p data-i18n="project_hkh2_desc">1000 rack - Dự kiến vận hành 2027</p>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="HInh anh/hkh2-canh quan.png" alt="Hoa Khanh 2 Landscape View">
+                        <div class="project-caption">
+                            <h3 data-i18n="project_hkh2_landscape_title">Hoa Khanh 2 DC</h3>
+                            <p data-i18n="project_hkh2_landscape_desc">Cảnh quan tổng thể</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-item">
-                    <img src="HInh anh/hl2.jpg" alt="Data Center 2">
-                    <div class="project-overlay">
-                        <h3 data-i18n="project_2">Viettel Data Center</h3>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="HInh anh/HLA.jpg" alt="Data Center 3">
-                    <div class="project-overlay">
-                        <h3 data-i18n="project_3">Hoà Lạc Data Center</h3>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="HInh anh/tan phu.jpg" alt="Data Center 4">
-                    <div class="project-overlay">
-                        <h3 data-i18n="project_4">Tân Phú Data Center</h3>
-                    </div>
-                </div>
+                <button class="slider-nav slider-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
+            <div class="slider-dots"></div>
         </div>
     </section>
 
@@ -405,30 +451,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name" data-i18n="form_name">Họ và tên *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="form_email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" data-i18n="form_phone">Số điện thoại *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company" data-i18n="form_company">Công ty</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="form_message">Nội dung *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-i18n="form_submit">Gửi thông tin</button>
-                    </form>
+                <div class="contact-qr">
+                    <div class="qr-container">
+                        <img src="HInh anh/VDCIM contact.png" alt="VDCIM Contact QR Code" class="qr-code">
+                        <p data-i18n="qr_scan">Quét mã QR để liên hệ nhanh</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -475,6 +502,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-video-container">
+                <video id="modalVideo" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
