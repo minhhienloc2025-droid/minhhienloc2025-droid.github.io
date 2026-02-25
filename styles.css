@@ -569,6 +569,8 @@ html {
     text-transform: uppercase;
     box-shadow: 0 3px 10px rgba(227, 6, 19, 0.3);
     animation: pulse 2s infinite;
+    cursor: pointer;
+    z-index: 5;
 }
 
 @keyframes pulse {

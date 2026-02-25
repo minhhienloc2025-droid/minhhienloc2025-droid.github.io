@@ -676,23 +676,37 @@ function initVideoModal() {
     
     // Click handler for feature cards with video
     document.querySelectorAll('.feature-card[data-video]').forEach(card => {
-        card.addEventListener('click', (e) => {
-            // Prevent tooltip from interfering
-            e.stopPropagation();
+        card.addEventListener('click', function(e) {
+            // Don't prevent default, just handle the click
             
             const videoSrc = card.getAttribute('data-video');
+            if (!videoSrc) return;
+            
+            console.log('Opening video:', videoSrc);
+            
             modalVideo.querySelector('source').src = videoSrc;
             modalVideo.load();
             modal.classList.add('active');
             
             // Auto play after loading
-            modalVideo.addEventListener('loadeddata', function() {
-                modalVideo.play();
+            modalVideo.addEventListener('loadeddata', function playVideo() {
+                modalVideo.play().catch(err => {
+                    console.error('Error playing video:', err);
+                });
             }, { once: true });
             
             // Prevent body scroll when modal is open
             document.body.style.overflow = 'hidden';
         });
+        
+        // Also handle clicks on badge
+        const badge = card.querySelector('.demo-badge');
+        if (badge) {
+            badge.addEventListener('click', function(e) {
+                e.stopPropagation();
+                card.click();
+            });
+        }
     });
     
     // Close modal function
@@ -723,7 +737,12 @@ function initVideoModal() {
 }
 
 // Initialize video modal when DOM is ready
-document.addEventListener('DOMContentLoaded', initVideoModal);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVideoModal);
+} else {
+    // DOM already loaded
+    initVideoModal();
+}
 
 // Projects Slider Functionality
 function initProjectsSlider() {
