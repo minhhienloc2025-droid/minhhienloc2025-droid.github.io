@@ -667,65 +667,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Video Modal Functionality
 function initVideoModal() {
+    console.log('Initializing video modal...');
+    
     const modal = document.getElementById('videoModal');
     const modalVideo = document.getElementById('modalVideo');
     const closeBtn = document.querySelector('.modal-close');
     const overlay = document.querySelector('.modal-overlay');
     
-    if (!modal || !modalVideo) return;
+    console.log('Modal elements:', { modal, modalVideo, closeBtn, overlay });
+    
+    if (!modal || !modalVideo) {
+        console.error('Modal or video element not found!');
+        return;
+    }
+    
+    // Get all feature cards with video
+    const videoCards = document.querySelectorAll('.feature-card[data-video]');
+    console.log('Found video cards:', videoCards.length);
     
     // Click handler for feature cards with video
-    document.querySelectorAll('.feature-card[data-video]').forEach(card => {
+    videoCards.forEach((card, index) => {
+        console.log(`Setting up card ${index + 1}:`, card.getAttribute('data-video'));
+        
         card.addEventListener('click', function(e) {
-            // Don't prevent default, just handle the click
+            e.preventDefault();
+            e.stopPropagation();
             
             const videoSrc = card.getAttribute('data-video');
-            if (!videoSrc) return;
+            console.log('Card clicked! Video source:', videoSrc);
             
-            console.log('Opening video:', videoSrc);
+            if (!videoSrc) {
+                console.error('No video source found!');
+                return;
+            }
             
-            modalVideo.querySelector('source').src = videoSrc;
+            // Set video source
+            const source = modalVideo.querySelector('source');
+            source.src = videoSrc;
             modalVideo.load();
+            
+            console.log('Video loaded, opening modal...');
+            
+            // Show modal
             modal.classList.add('active');
-            
-            // Auto play after loading
-            modalVideo.addEventListener('loadeddata', function playVideo() {
-                modalVideo.play().catch(err => {
-                    console.error('Error playing video:', err);
-                });
-            }, { once: true });
-            
-            // Prevent body scroll when modal is open
             document.body.style.overflow = 'hidden';
+            
+            // Try to play video
+            setTimeout(() => {
+                modalVideo.play()
+                    .then(() => console.log('Video playing successfully'))
+                    .catch(err => console.error('Error playing video:', err));
+            }, 100);
         });
-        
-        // Also handle clicks on badge
-        const badge = card.querySelector('.demo-badge');
-        if (badge) {
-            badge.addEventListener('click', function(e) {
-                e.stopPropagation();
-                card.click();
-            });
-        }
     });
     
     // Close modal function
     function closeModal() {
+        console.log('Closing modal...');
         modal.classList.remove('active');
         modalVideo.pause();
-        modalVideo.querySelector('source').src = '';
+        modalVideo.currentTime = 0;
+        const source = modalVideo.querySelector('source');
+        source.src = '';
         modalVideo.load();
         document.body.style.overflow = '';
     }
     
     // Close button click
     if (closeBtn) {
-        closeBtn.addEventListener('click', closeModal);
+        closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeModal();
+        });
     }
     
     // Overlay click
     if (overlay) {
-        overlay.addEventListener('click', closeModal);
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeModal();
+            }
+        });
     }
     
     // ESC key to close
@@ -734,6 +756,8 @@ function initVideoModal() {
             closeModal();
         }
     });
+    
+    console.log('Video modal initialized successfully!');
 }
 
 // Initialize video modal when DOM is ready
